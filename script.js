@@ -38,9 +38,7 @@ function updateProgress() {
   if (secs < 10) {
     secs = `0${secs}`;
   }
-
   timestamp.innerHTML = `${mins}:${secs}`;
-
 }
 
 // Set video time to progress
@@ -59,9 +57,6 @@ video.addEventListener('click', toggleVideoStatus);
 video.addEventListener('pause', updatePlayIcon);
 video.addEventListener('play', updatePlayIcon);
 video.addEventListener('timeupdate', updateProgress);
-
 play.addEventListener('click', toggleVideoStatus);
-
 stop.addEventListener('click', stopVideo);
-
 progress.addEventListener('change', setVideoProgress);
